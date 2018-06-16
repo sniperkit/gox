@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/mitchellh/iochan"
+	iochan "github.com/sniperkit/iochan/pkg"
 )
 
 // The "main" method for when the toolchain build is requested.
