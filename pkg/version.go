@@ -1,6 +1,7 @@
 package gox
 
 var (
+	CommitHash   = ""
 	CommitID     = ""
 	CommitUnix   = ""
 	BuildVersion = "2015.6.2-6-gfd7e2d1-dev"

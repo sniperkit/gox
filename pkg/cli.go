@@ -70,6 +70,7 @@ func MainCLI() int {
 
 	if version {
 		printInfo()
+		os.Exit(0)
 		return 1
 	}
 
@@ -194,6 +195,7 @@ func printInfo() {
 		BuildCount    string
 		BuildTime     string
 		BuildUnix     string
+		CommitHash    string
 		CommitID      string
 		CommitUnix    string
 		CurrentOS     string
@@ -206,6 +208,7 @@ func printInfo() {
 		BuildCount:    BuildCount,
 		BuildTime:     BuildTime,
 		BuildUnix:     BuildUnix,
+		CommitHash:    CommitHash,
 		CommitID:      CommitID,
 		CommitUnix:    CommitUnix,
 		CurrentOS:     runtime.GOOS,
@@ -231,6 +234,7 @@ Build Unix: {{.BuildUnix}}
 Build Count: {{.BuildCount}}
 ------------------------------------------------------------
 Commit ID: {{.CommitID}}
+Commit Hash: {{.CommitHash}}
 Commit Unix: {{.CommitUnix}}
 ------------------------------------------------------------
 Current OS: {{ .CurrentOS }}
