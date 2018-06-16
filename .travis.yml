@@ -5,9 +5,10 @@ go:
   - 1.7.x
   - 1.8.x
   - 1.9.x
+  - 1.10.x
   - tip
 
 script:
-  - go test ./...
+  - go test ./pkg/...
 
-go_import_path: github.com/mitchellh/gox
+go_import_path: github.com/sniperkit/gox
